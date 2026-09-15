@@ -1,0 +1,14 @@
+initscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath('io.github.mohammed-baqer-null:rv2ide-gradle-plugin:1.0.0') {
+            setChanging(false)
+        }
+    }
+}
+
+apply plugin: com.tom.rv2ide.gradle.AndroidIDEInitScriptPlugin
